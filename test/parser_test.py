@@ -1,3 +1,5 @@
+import sys
+sys.path.append('parser')
 import parser
 
 def test_f():
