@@ -2,8 +2,12 @@ This is to give a small example of a PYTHONPATH problem.
 
 This works (run in root directory):
 
-$ PYTHONPATH=abcd python -m pytest test/abcd_test.py
+PYTHONPATH=parser python -m pytest test/parser_test.py 
 
-This works (run in root directory):
+This doesn't work (run in root directory):
 
-$ python -m pytest test/abcd_test.py
+$ python -m pytest test/parser_test.py
+>       assert 2 == parser.f(1)
+E       AttributeError: 'module' object has no attribute 'f'
+
+test/parser_test.py:4: AttributeError

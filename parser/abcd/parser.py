@@ -1,3 +1,3 @@
-class Abcd:
+class Parser:
 	def nice():
 		return 'nice'
