@@ -1,0 +1,5 @@
+This is to give a small example of a PYTHONPATH problem.
+
+This works (run in root directory):
+
+$ PYTHONPATH=abcd python -m pytest test/abcd_test.py
