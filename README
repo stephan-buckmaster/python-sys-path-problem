@@ -12,3 +12,7 @@ $ python -m pytest test/abcd_test.py
 test/abcd_test.py:1: in <module>
     import abcd
 E   ImportError: No module named abcd
+
+Which is not too surprising. However in other branches we add the directory to the sys.path.
+
+Sometimes that "works" and sometimes it doesn't.
